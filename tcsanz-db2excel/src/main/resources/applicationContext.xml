@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:property-placeholder location="classpath:app.properties,database.properties"/>
+	<context:component-scan base-package="com.anz"/>	
+	
+	<!-- For times when you need more complex processing, passing data to the scheduled job -->
+	<bean name="complexJobDetail" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+	    <property name="jobClass" value="com.anz.spring.quartz.ScheduledJob" />
+	    <property name="jobDataMap">
+	        <map>
+	            <entry key="voucherService" value-ref="voucherService" />
+	            <entry key="db2Excel" value-ref="db2Excel" />
+	        </map>
+	    </property>
+	    <property name="durability" value="true" />
+	</bean>
+	
+	<!-- Run the job every 5 seconds only on Weekends -->
+	<bean id="cronTrigger"  class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+	    <property name="jobDetail" ref="complexJobDetail" />
+	    <property name="cronExpression" value="${cron.expression}" />
+	</bean>
+	
+	<!-- Scheduler factory bean to glue together jobDetails and triggers to Configure Quartz Scheduler -->
+	<bean  class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	    <property name="jobDetails">
+	        <list>
+	            <ref bean="complexJobDetail" />
+	        </list>
+	    </property>
+	 
+	    <property name="triggers">
+	        <list>
+	            <ref bean="cronTrigger" />
+	        </list>
+	    </property>
+	</bean>
+	
+	<bean id="camelContext" class="org.apache.camel.impl.DefaultCamelContext"/>
+	<bean id="exchange" class="org.apache.camel.impl.DefaultExchange">
+		<constructor-arg ref="camelContext"/>
+	</bean>
+	<import resource="datasource.xml"/>	
+</beans>
