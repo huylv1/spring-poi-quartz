@@ -77,14 +77,22 @@ public class VoucherDaoImpl implements VoucherDao {
 		@Override
 		public Object[] mapRow(ResultSet rs, int rowNum) throws SQLException {
 			String status = rs.getString("trang_thai"); 
+			String respThue = rs.getString("resp_thue"); 
 			
 			switch (status) {
 				case "00":
 					status = "00: CHUA KIEM SOAT"; 
 					break;
-				case "01":
-					status = "01: THANH CONG";
+				case "01": {
+					if ("01".equals(respThue)) {
+						status = "01: DA KIEM SOAT.GUI THUE THANH CONG";
+					} else if ("00".equals(respThue)) {
+						status = "01: DA KIEM SOAT.GUI KIEM SOAT THUE LOI";
+					} else if (null == respThue) {
+						status = "01: DA KIEM SOAT.CHUA GUI KIEM SOAT THUE";
+					}
 					break;
+				}
 				case "02":
 					status = "02: LOI";
 					break;
