@@ -1,0 +1,133 @@
+[01/12/16 14:17:05](main) INFO  - sPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1b044df: startup date [Tue Jan 12 14:17:05 ICT 2016]; root of context hierarchy
+[01/12/16 14:17:05](main) INFO  - XmlBeanDefinitionReader    - Loading XML bean definitions from class path resource [applicationContext.xml]
+[01/12/16 14:17:06](main) INFO  - XmlBeanDefinitionReader    - Loading XML bean definitions from class path resource [datasource.xml]
+[01/12/16 14:17:06](main) INFO  - urcesPlaceholderConfigurer - Loading properties file from class path resource [app.properties]
+[01/12/16 14:17:06](main) INFO  - urcesPlaceholderConfigurer - Loading properties file from class path resource [database.properties]
+[01/12/16 14:17:07](main) INFO  - DriverManagerDataSource    - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+[01/12/16 14:17:07](main) INFO  - DriverManagerDataSource    - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+[01/12/16 14:17:08](main) INFO  - StdSchedulerFactory        - Using default implementation for ThreadExecutor
+[01/12/16 14:17:08](main) INFO  - SchedulerSignalerImpl      - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[01/12/16 14:17:08](main) INFO  - QuartzScheduler            - Quartz Scheduler v.2.2.2 created.
+[01/12/16 14:17:08](main) INFO  - RAMJobStore                - RAMJobStore initialized.
+[01/12/16 14:17:08](main) INFO  - QuartzScheduler            - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[01/12/16 14:17:08](main) INFO  - StdSchedulerFactory        - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+[01/12/16 14:17:08](main) INFO  - StdSchedulerFactory        - Quartz scheduler version: 2.2.2
+[01/12/16 14:17:08](main) INFO  - QuartzScheduler            - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1acdea1
+[01/12/16 14:17:08](main) INFO  - DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+[01/12/16 14:17:08](main) INFO  - SchedulerFactoryBean       - Starting Quartz Scheduler now
+[01/12/16 14:17:08](main) INFO  - QuartzScheduler            - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+[01/12/16 14:20:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) DEBUG - JdbcTemplate               - Calling stored procedure [{call TCS_PCK_VOUCHERXLS.prc_export_tdpa(?)}]
+[01/12/16 14:20:01](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) DEBUG - JdbcTemplate               - CallableStatement.execute() returned 'false'
+[01/12/16 14:20:01](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) DEBUG - JdbcTemplate               - CallableStatement.getUpdateCount() returned -1
+[01/12/16 14:20:01](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Creating workbook
+[01/12/16 14:20:02](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Populating data
+[01/12/16 14:20:03](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - DefaultTypeConverter       - Loaded 182 type converters
+[01/12/16 14:20:03](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Writing data to OETAX120116_142003.xlsx
+[01/12/16 14:20:03](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Excel written successfully to C:\
+[01/12/16 14:25:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) DEBUG - JdbcTemplate               - Calling stored procedure [{call TCS_PCK_VOUCHERXLS.prc_export_tdpa(?)}]
+[01/12/16 14:25:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) DEBUG - JdbcTemplate               - CallableStatement.execute() returned 'false'
+[01/12/16 14:25:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) DEBUG - JdbcTemplate               - CallableStatement.getUpdateCount() returned -1
+[01/12/16 14:25:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) INFO  - Db2Excel                   - Creating workbook
+[01/12/16 14:25:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) INFO  - Db2Excel                   - Populating data
+[01/12/16 14:25:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) INFO  - Db2Excel                   - Writing data to OETAX120116_142500.xlsx
+[01/12/16 14:25:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) INFO  - Db2Excel                   - Excel written successfully to C:\
+[01/12/16 14:30:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) DEBUG - JdbcTemplate               - Calling stored procedure [{call TCS_PCK_VOUCHERXLS.prc_export_tdpa(?)}]
+[01/12/16 14:30:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) DEBUG - JdbcTemplate               - CallableStatement.execute() returned 'false'
+[01/12/16 14:30:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) DEBUG - JdbcTemplate               - CallableStatement.getUpdateCount() returned -1
+[01/12/16 14:30:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) INFO  - Db2Excel                   - Creating workbook
+[01/12/16 14:30:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) INFO  - Db2Excel                   - Populating data
+[01/12/16 14:30:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) INFO  - Db2Excel                   - Writing data to OETAX120116_143000.xlsx
+[01/12/16 14:30:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) INFO  - Db2Excel                   - Excel written successfully to C:\
+[01/12/16 14:33:23](main) INFO  - sPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@823c6d: startup date [Tue Jan 12 14:33:23 ICT 2016]; root of context hierarchy
+[01/12/16 14:33:23](main) INFO  - XmlBeanDefinitionReader    - Loading XML bean definitions from class path resource [applicationContext.xml]
+[01/12/16 14:33:23](main) INFO  - XmlBeanDefinitionReader    - Loading XML bean definitions from class path resource [datasource.xml]
+[01/12/16 14:33:23](main) INFO  - urcesPlaceholderConfigurer - Loading properties file from class path resource [app.properties]
+[01/12/16 14:33:23](main) INFO  - urcesPlaceholderConfigurer - Loading properties file from class path resource [database.properties]
+[01/12/16 14:33:23](main) INFO  - DriverManagerDataSource    - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+[01/12/16 14:33:23](main) INFO  - DriverManagerDataSource    - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+[01/12/16 14:33:24](main) INFO  - StdSchedulerFactory        - Using default implementation for ThreadExecutor
+[01/12/16 14:33:24](main) INFO  - SchedulerSignalerImpl      - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[01/12/16 14:33:24](main) INFO  - QuartzScheduler            - Quartz Scheduler v.2.2.2 created.
+[01/12/16 14:33:24](main) INFO  - RAMJobStore                - RAMJobStore initialized.
+[01/12/16 14:33:24](main) INFO  - QuartzScheduler            - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[01/12/16 14:33:24](main) INFO  - StdSchedulerFactory        - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+[01/12/16 14:33:24](main) INFO  - StdSchedulerFactory        - Quartz scheduler version: 2.2.2
+[01/12/16 14:33:24](main) INFO  - QuartzScheduler            - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1583f79
+[01/12/16 14:33:24](main) INFO  - DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+[01/12/16 14:33:24](main) INFO  - SchedulerFactoryBean       - Starting Quartz Scheduler now
+[01/12/16 14:33:24](main) INFO  - QuartzScheduler            - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+[01/12/16 14:35:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) DEBUG - JdbcTemplate               - Calling stored procedure [{call TCS_PCK_VOUCHERXLS.prc_export_tdpa(?)}]
+[01/12/16 14:35:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) DEBUG - JdbcTemplate               - CallableStatement.execute() returned 'false'
+[01/12/16 14:35:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) DEBUG - JdbcTemplate               - CallableStatement.getUpdateCount() returned -1
+[01/12/16 14:35:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Creating workbook
+[01/12/16 14:35:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Populating data
+[01/12/16 14:35:01](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - DefaultTypeConverter       - Loaded 182 type converters
+[01/12/16 14:35:01](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Writing data to OETAX120116_143501.xlsx
+[01/12/16 14:35:01](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Excel written successfully to C:\
+[01/12/16 14:40:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) DEBUG - JdbcTemplate               - Calling stored procedure [{call TCS_PCK_VOUCHERXLS.prc_export_tdpa(?)}]
+[01/12/16 14:40:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) DEBUG - JdbcTemplate               - CallableStatement.execute() returned 'false'
+[01/12/16 14:40:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) DEBUG - JdbcTemplate               - CallableStatement.getUpdateCount() returned -1
+[01/12/16 14:40:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) INFO  - Db2Excel                   - Creating workbook
+[01/12/16 14:40:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) INFO  - Db2Excel                   - Populating data
+[01/12/16 14:40:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) INFO  - Db2Excel                   - Writing data to OETAX120116_144000.xlsx
+[01/12/16 14:40:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-2) INFO  - Db2Excel                   - Excel written successfully to C:\
+[01/12/16 14:45:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) DEBUG - JdbcTemplate               - Calling stored procedure [{call TCS_PCK_VOUCHERXLS.prc_export_tdpa(?)}]
+[01/12/16 14:45:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) DEBUG - JdbcTemplate               - CallableStatement.execute() returned 'false'
+[01/12/16 14:45:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) DEBUG - JdbcTemplate               - CallableStatement.getUpdateCount() returned -1
+[01/12/16 14:45:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) INFO  - Db2Excel                   - Creating workbook
+[01/12/16 14:45:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) INFO  - Db2Excel                   - Populating data
+[01/12/16 14:45:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) INFO  - Db2Excel                   - Writing data to OETAX120116_144500.xlsx
+[01/12/16 14:45:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-3) INFO  - Db2Excel                   - Excel written successfully to C:\
+[01/12/16 14:50:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-4) DEBUG - JdbcTemplate               - Calling stored procedure [{call TCS_PCK_VOUCHERXLS.prc_export_tdpa(?)}]
+[01/12/16 14:50:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-4) DEBUG - JdbcTemplate               - CallableStatement.execute() returned 'false'
+[01/12/16 14:50:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-4) DEBUG - JdbcTemplate               - CallableStatement.getUpdateCount() returned -1
+[01/12/16 14:50:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-4) INFO  - Db2Excel                   - Creating workbook
+[01/12/16 14:50:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-4) INFO  - Db2Excel                   - Populating data
+[01/12/16 14:50:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-4) INFO  - Db2Excel                   - Writing data to OETAX120116_145000.xlsx
+[01/12/16 14:50:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-4) INFO  - Db2Excel                   - Excel written successfully to C:\
+[01/20/16 15:47:00](main) INFO  - sPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4d28c7: startup date [Wed Jan 20 15:47:00 ICT 2016]; root of context hierarchy
+[01/20/16 15:47:01](main) INFO  - XmlBeanDefinitionReader    - Loading XML bean definitions from class path resource [applicationContext.xml]
+[01/20/16 15:47:01](main) INFO  - XmlBeanDefinitionReader    - Loading XML bean definitions from class path resource [datasource.xml]
+[01/20/16 15:47:01](main) INFO  - urcesPlaceholderConfigurer - Loading properties file from class path resource [app.properties]
+[01/20/16 15:47:01](main) INFO  - urcesPlaceholderConfigurer - Loading properties file from class path resource [database.properties]
+[01/20/16 15:47:01](main) INFO  - DriverManagerDataSource    - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+[01/20/16 15:47:02](main) INFO  - StdSchedulerFactory        - Using default implementation for ThreadExecutor
+[01/20/16 15:47:02](main) INFO  - SchedulerSignalerImpl      - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[01/20/16 15:47:02](main) INFO  - QuartzScheduler            - Quartz Scheduler v.2.2.2 created.
+[01/20/16 15:47:02](main) INFO  - RAMJobStore                - RAMJobStore initialized.
+[01/20/16 15:47:02](main) INFO  - QuartzScheduler            - Scheduler meta-data: Quartz Scheduler (v2.2.2) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[01/20/16 15:47:02](main) INFO  - StdSchedulerFactory        - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+[01/20/16 15:47:02](main) INFO  - StdSchedulerFactory        - Quartz scheduler version: 2.2.2
+[01/20/16 15:47:02](main) INFO  - QuartzScheduler            - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3dd4b6
+[01/20/16 15:47:02](main) INFO  - DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+[01/20/16 15:47:02](main) INFO  - SchedulerFactoryBean       - Starting Quartz Scheduler now
+[01/20/16 15:47:02](main) INFO  - QuartzScheduler            - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+[01/20/16 15:50:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) DEBUG - JdbcTemplate               - Calling stored procedure [{call TCS_PCK_VOUCHERXLS.prc_export_tdpa(?)}]
+[01/20/16 15:50:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) DEBUG - JdbcTemplate               - CallableStatement.execute() returned 'false'
+[01/20/16 15:50:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) DEBUG - JdbcTemplate               - CallableStatement.getUpdateCount() returned -1
+[01/20/16 15:50:00](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Creating workbook
+[01/20/16 15:50:01](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Populating data
+[01/20/16 15:50:02](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - DefaultTypeConverter       - Loaded 182 type converters
+[01/20/16 15:50:02](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Writing data to OETAX200116_155002.xlsx
+[01/20/16 15:50:02](org.springframework.scheduling.quartz.SchedulerFactoryBean#0_Worker-1) INFO  - Db2Excel                   - Excel written successfully to C:\
